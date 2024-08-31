@@ -472,3 +472,57 @@ update_vectorstore(vectorstore, updated_texts, updated_embeddings)
 **Embedding quality:** Evaluate the quality of embeddings using metrics like cosine similarity or perplexity. <br>
 **Computational efficiency:** Optimize embedding creation and search processes for performance.<br>
 **Data privacy:** Consider data privacy and security implications when handling embeddings.
+
+## Prompt flow to develop language model apps
+https://learn.microsoft.com/en-us/training/modules/get-started-prompt-flow-ai-studio <br>
+Prompt flow takes a prompt as input, which in the context of LLMs, refers to the query provided to the LLM application to generate a response. It's the text or set of instructions given to the LLM application, prompting it to generate output or perform a specific task.
+Prompt flow allows you to create flows, which refers to the sequence of actions or steps that are taken to achieve a specific task or functionality. <br>
+**Understand the development lifecycle of a large language model (LLM) app**
+1. **Initialization:** Define the use case and design the solution.
+    - Define the objective
+    - Collect a sample dataset
+    -    Build a basic prompt
+    -    Design the flow
+2. **Experimentation:** Develop a flow and test with a small dataset.
+The experimentation phase is an iterative process during which you (1) run the flow against a sample dataset. You then (2) evaluate the prompt's performance. If you're (3) satisfied with the result, you can move on to evaluation and refinement. If you think there's room for improvement, you can (4) modify the flow by changing the prompt or flow itself.
+3. **Evaluation and refinement:** Assess the flow with a larger dataset.
+By testing the flow on a larger dataset, you can evaluate how well the LLM application generalizes to new data. During evaluation, you can identify potential bottlenecks or areas for optimization or refinement.
+4. **Production:** Deploy and monitor the flow and application.
+    - Optimize the flow that classifies incoming articles for efficiency and effectiveness.
+    - Deploy your flow to an endpoint. When you call the endpoint, the flow is triggered to run and the desired output is generated.
+    - Monitor the performance of your solution by collecting usage data and end-user feedback. By understanding how the application performs, you can improve the flow whenever necessary.
+Finally, your news article classification application is ready for production.<br>
+During both evaluation and refinement, and production, you might find that your solution needs to be improved. 
+
+## Core components of Prompt Flow
+To create a Large Language Model (LLM) application with prompt flow, you need to understand prompt flow's core components.
+<br>
+
+**Understand a flow**<br>
+Prompt flow is a feature within the Azure AI Studio that allows you to author flows. Flows are executable workflows often consist of three parts:
+
+- `Inputs:` Represent data passed into the flow. Can be different data types like strings, integers, or boolean.
+- `Nodes:` Represent tools that perform data processing, task execution, or algorithmic operations.
+- `Outputs:` Represent the data produced by the flow.
+
+**Explore the tools available in prompt flow**<br>
+Three common tools are:
+- `LLM tool:` Enables custom prompt creation utilizing Large Language Models.
+- `Python tool:` Allows the execution of custom Python scripts.
+- `Prompt tool:` Prepares prompts as strings for complex scenarios or integration with other tools.
+ <br>
+
+**Understand the types of flows**
+There are three different types of flows you can create with prompt flow:
+- `Standard flow:` Ideal for general LLM-based application development, offering a range of versatile tools.
+- `Chat flow:` Designed for conversational applications, with enhanced support for chat-related functionalities.
+- `Evaluation flow:` Focused on performance evaluation, allowing the analysis and improvement of models or applications through feedback on previous runs.
+
+## Evaluating RAG Pipelines
+Ragas is a framework that helps you evaluate your Retrieval Augmented Generation (RAG) pipelines. RAG denotes a class of LLM applications that use external data to augment the LLM’s context. There are existing tools and frameworks that help you build these pipelines but evaluating it and quantifying your pipeline performance can be hard.
+
+https://docs.ragas.io/en/stable/
+
+
+## LLM Finetuning
+[FineTuning](https://app.pluralsight.com/library/courses/pre-trained-llms-build-solutions/table-of-contents)
